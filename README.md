@@ -29,7 +29,7 @@ addEventListener(
         let url=new URL(event.request.url);
         url.hostname="xx.xxxx.xx";//你的heroku域名
         let request=new Request(url,event.request);
-        event. respondWith(
+        event.respondWith(
             fetch(request)
         )
     }
